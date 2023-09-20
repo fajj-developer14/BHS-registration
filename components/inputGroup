@@ -1,0 +1,4 @@
+<div class="inputGroup">
+  <span class="badge badgeDeepblue">1</span>
+  <input type="text" minlength="2" maxlength="50" required />
+</div>
