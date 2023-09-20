@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FIXME: Fill their content later -->
+    <meta name="description" content="Add description later" />
+    <meta name="keywords" content="Add keywords later" />
+    <title>JT Arena Homepage</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Hero -->
+    <main class="block blockBlack blockSkew--left hero">
+      <div class="grid grid--1x2 container">
+        <header class="heroHeader">
+          <h1 data-aos="zoom-in-up">JT ARENA 6.0</h1>
+          <p class="hero__tagline">
+            An exhilirating fest treasuring various sports!
+          </p>
+          <a
+            class="link btn btnDeepblue btnStretched"
+            href="form.html"
+            target="_blank"
+            >Register now</a
+          >
+        </header>
+        <picture data-aos="zoom-in">
+          <source
+            type="image/webp"
+            srcset="
+              images/logo/JTlogo@400w.webp   400w,
+              images/logo/JTlogo@800w.webp   800w,
+              images/logo/JTlogo@1200w.webp 1200w
+            "
+          />
+          <source
+            type="image/jpeg"
+            srcset="
+              images/logo/JTlogo@400w.jpg   400w,
+              images/logo/JTlogo@800w.jpg   800w,
+              images/logo/JTlogo@1200w.jpg 1200w
+            "
+          />
+          <img
+            src="images/logo/JTlogo@400w.jpg"
+            alt="JT arena logo"
+            class="fluid"
+          />
+        </picture>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
