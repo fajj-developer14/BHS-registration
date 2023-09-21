@@ -247,10 +247,6 @@ h1 {
   font-weight: 600;
   font-size: 1.4rem;
   border-bottom: 2px solid #000;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 .navBrand {
@@ -296,16 +292,27 @@ h1 {
   forms
 ========================================================================== 
 */
+/* body of form page */
 .formBg {
   background: url(../images/background.svg);
   background-size: 300vw;
-  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* container to center the form */
+.restContainer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input[type="text"],
 input[type="email"] {
   padding: 1.5rem 3rem;
   outline: 0;
+  width: 100%;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   color: var(--color-darkgrey);
@@ -329,8 +336,9 @@ label {
 }
 
 .formGroup {
-  margin-bottom: 2.4rem;
+  margin-bottom: 3rem;
 }
+
 
 /* input group */
 .inputGroup {
@@ -357,9 +365,38 @@ label {
   border: 0;
 }
 
+/* Registration complete component */
+.formContainer {
+  background-color: #fff;
+  margin: 0 2rem;
+  width: 750px;
+  border-radius: 5px;
+}
+
+.formContainer .title{
+  font-size: 3.2rem;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.formContainer .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 3px;
+  width: 34px;
+  background-color: var(--color-deepblue);
+}
+
 @media screen and (min-width: 500px) {
   .formBg {
     background-size: auto;
+  }
+  
+  .formContainer {
+    margin: 0 8rem;
   }
 }
 

@@ -22,6 +22,51 @@
         <li class="navItem"><i class="fa-solid fa-phone"></i> 0320-1477831</li>
       </ul>
     </nav>
+    <main class="restContainer">
+      <div class="block formContainer">
+        <header class="title">Registration</header>
+        <form>
+          <!-- Name of institution -->
+          <div class="formGroup">
+            <label for="instituteName"
+              >Name of the institution (include campus):</label
+            >
+            <input
+              name="Institute name"
+              id="instituteName"
+              type="text"
+              minlength="2"
+              maxlength="60"
+              required
+            />
+          </div>
+          <!-- Name of head delegate -->
+          <div class="formGroup">
+            <label for="hDelegateName">Name of head delegate:</label>
+            <input
+              name="Head delegate name"
+              id="hDelegateName"
+              type="text"
+              minlength="2"
+              maxlength="50"
+              required
+            />
+          </div>
+          <!-- email of head delegate-->
+          <div class="formGroup">
+            <label for="hDelegateEmail">Email of head delegate:</label>
+            <input
+              name="Head delegate email"
+              id="hDelegateEmail"
+              type="email"
+              minlength="2"
+              maxlength="50"
+              required
+            />
+          </div>
+        </form>
+      </div>
+    </main>
 
     <script
       src="https://kit.fontawesome.com/9a45ae5449.js"
