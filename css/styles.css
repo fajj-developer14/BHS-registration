@@ -405,7 +405,6 @@ label {
   badge
 ========================================================================== 
 */
-
 .badge {
   display: inline-block;
   /* border-radius: var(--border-radius); */
@@ -436,4 +435,23 @@ label {
 .badgeYellow {
   background-color: rgb(228, 201, 31);
   color: #fff;
+}
+
+/*
+==========================================================================
+  badge
+========================================================================== 
+*/
+.iconContainer {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  padding: 0.7rem;
+  border-radius: 10px;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
 }
